@@ -9,6 +9,7 @@ import foot from "./common/footerNagivation/footerNagivation";
 export default {
   components: {
     foot
+    
   }
 };
 </script>
