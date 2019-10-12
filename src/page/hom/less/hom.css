@@ -1,0 +1,166 @@
+#hom {
+  width: 100%;
+  height: auto;
+}
+#hom header {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+#hom header img {
+  width: 100%;
+  height: 100%;
+}
+#hom header #header_div {
+  width: 100%;
+  height: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+#hom header #header_div .inp {
+  width: 55%;
+  display: flex;
+  position: relative;
+}
+#hom header #header_div .inp input {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  padding: 0 2rem 0 1.5rem;
+}
+#hom header #header_div .inp .icon-search {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0.3rem;
+  top: 0.2;
+}
+#hom header #header_div .linsheng span {
+  font-size: 1.5rem;
+}
+#hom content {
+  width: 100%;
+}
+#hom content .cont {
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#hom content .cont .cont_ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 0.80rem;
+  color: #B5B5B5;
+}
+#hom content .cont .cont_ul li {
+  display: block;
+}
+#hom content .cont .cont_ul .one {
+  color: #767676;
+}
+#hom content .cont .cont_ul .one ul {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.13rem solid #F8F8F8;
+}
+#hom content .cont .cont_ul .one ul li {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.8rem 0rem;
+}
+#hom content .cont .cont_ul .one ul li img {
+  width: 3rem;
+}
+#hom content .cont .cont_ul .tow ul {
+  display: flex;
+  justify-content: space-around;
+}
+#hom content .cont .cont_ul .tow ul .tow_li {
+  padding: 1rem 0;
+}
+#hom content .cont .cont_ul .tow ul .tow_li div {
+  margin: 0.5rem 0;
+}
+#hom content .cont .cont_ul .three {
+  width: 100%;
+  padding-bottom: 0.8rem;
+  border-bottom: 0.3rem solid #F8F8F8;
+}
+#hom content .cont .cont_ul .three ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#hom content .cont .cont_ul .three ul li {
+  width: 20%;
+  padding: 0.3rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#hom content .cont .cont_ul .three ul li img {
+  width: 2rem;
+  align-self: center;
+}
+#hom content .cont_tujian {
+  padding-top: 1.5rem;
+}
+#hom content .cont_tujian .tujian_a .youche {
+  border-left: 0.3rem solid yellow;
+  padding-left: 0.3rem;
+  margin-left: 0.3rem;
+}
+#hom content .cont_tujian .tujian_a .tujian_img {
+  display: flex;
+  padding: 0.5rem 0;
+  justify-content: space-around;
+}
+#hom content .cont_tujian .tujian_a img:nth-child(1) {
+  width: 60%;
+  height: 6rem;
+}
+#hom content .cont_tujian .tujian_a img:nth-child(2) {
+  height: 6rem;
+}
+#hom content .cont_tujian .tujian_a .tujian_but {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#hom content .cont_tujian .tujian_a .tujian_but button {
+  background: #FF7C31;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+  width: 40%;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hom content .cont_tujian .tujian_a .tujian_but button p {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+#hom .fot {
+  width: 100%;
+  height: 10rem;
+}
+#hom .fot img {
+  width: 100%;
+}
