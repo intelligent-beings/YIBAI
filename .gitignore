@@ -1,5 +1,6 @@
 .vscode/
-dist/
+.idea/
+
 node_modules/
 true/
 npm-debug.log*
