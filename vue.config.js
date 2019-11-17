@@ -2,26 +2,6 @@
 const path = require('path')
 const webpack = require('webpack')
 module.exports = {
-//   chainWebpack: config => {
-//     config.module
-//       .rule('images')
-//       .use('url-loader')
-//       .tap(args => {
-//           return [
-//               {
-//                 limit: 4096,
-//                 fallback: {
-//                   loader: 'file-loader',
-//                   options: {
-//                     name: 'img/[name].[hash:0].[ext]'
-//                   }
-//                 }
-//               }
-//           ]
-//       })
-
-// },
-
   publicPath: process.env.NODE_ENV === 'production' ? '/production-sub-path/' : '/', 
   outputDir: 'dist',  //打包输出目录名  
 
@@ -49,7 +29,7 @@ module.exports = {
 
     hot:true,//热加载
     open: true,   //自动打开浏览器
-    host: '127.0.0.1',
+    host: 'localhost',
     port: 8080,
     https:false,
     hotOnly: false,

@@ -27,27 +27,28 @@
         <li class="one">
           <ul>
             <router-link to="#" tag='li' 
-            v-for="item in daikuan" 
+            v-for="item in daikon" 
             :key="item.index">
-              <img :src="item.src" />
+              <img :src="item.src"/>
               <span>{{item.text}}</span>
             </router-link>
           </ul>
         </li>
         <li class="tow">
           <ul>
-            <li class="tow_li" v-for="item in to" :key="item.index">
+            <router-link to='/w' tag='li' class="tow_li" v-for="item in to" :key="item.index">
               <div>{{item.jia}}</div>
               <div>{{item.fangshi}}</div>
-            </li>
+            </router-link>>
           </ul>
         </li>
         <li class="three">
           <ul>
-            <li v-for="item in three" :key="item.index">
+            <router-link to ="/#" tag = 'li' v-for="item in three" :key="item.index">
               <img :src="item.img" />
               <div>{{item.text}}</div>
-            </li>
+            </router-link>
+            
           </ul>
         </li>
       </ul>
@@ -62,9 +63,9 @@
             <button class="iconfont icon-car">
               <p>全部车型</p>
             </button>
-            <button class="iconfont icon-xiaoxi">
+            <router-link to ="/zixun" tag ='button' class="iconfont icon-xiaoxi">
               <p>在线咨询</p>
-            </button>
+            </router-link>
           </div>
         </div>
       </div>

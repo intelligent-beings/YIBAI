@@ -1,19 +1,19 @@
 {
 
   "daikuan": [{
-      "src": 'E:/yibai/\src/\common/\img/\8 (2).png',
+      "src":  require("./../../common/img/8 (1).png")
       "text": "贷款购车"
     },
     {
-      "src": "./../../common/img/8 (3).png",
+      "src": require("./../../common/img/8 (3).png"),
       "text": "线下门店"
     },
     {
-      "src": 'require ("./../../common/img/8 (2).png")',
+      "src": require("./../../common/img/8 (2).png"),
       "text": "优质车源"
     },
     {
-      "src": 'require ("./../../common/img/8 (3).png")',
+      "src": require("./../../common/img/8 (3).png")',
       "text": "积分商城"
     }
   ],
