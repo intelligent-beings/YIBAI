@@ -26,10 +26,8 @@
       <ul class="cont_ul">
         <li class="one">
           <ul>
-            <router-link to="#" tag='li' 
-            v-for="item in daikon" 
-            :key="item.index">
-              <img :src="item.src"/>
+            <router-link to="#" tag='li' v-for="item in daikon" :key="item.index">
+              <img :src="item.src" />
               <span>{{item.text}}</span>
             </router-link>
           </ul>
@@ -44,11 +42,11 @@
         </li>
         <li class="three">
           <ul>
-            <router-link to ="/#" tag = 'li' v-for="item in three" :key="item.index">
+            <router-link to="/#" tag='li' v-for="item in three" :key="item.index">
               <img :src="item.img" />
               <div>{{item.text}}</div>
             </router-link>
-            
+
           </ul>
         </li>
       </ul>
@@ -56,14 +54,22 @@
         <div class="tujian_a">
           <div class="youche">优车推荐</div>
           <div class="tujian_img">
-            <img src="../../common/img/车友圈视频1.png" />
-            <img src="../../common/img/车友圈视频2.png" />
+            <!-- <img src="../../common/img/车友圈视频1.png" />
+            <img src="../../common/img/车友圈视频2.png" /> -->
+            <video controls="controls" autoplay = 'autoplay'>
+              <source src="./vidoe/速10.mp4" />
+            </video>
+            <video   controls="controls">
+              <source src="./vidoe/car.mp4"/>
+            </video>
+            
+            
           </div>
           <div class="tujian_but">
             <button class="iconfont icon-car">
               <p>全部车型</p>
             </button>
-            <router-link to ="/zixun" tag ='button' class="iconfont icon-xiaoxi">
+            <router-link to="/zixun" tag='button' class="iconfont icon-xiaoxi">
               <p>在线咨询</p>
             </router-link>
           </div>
