@@ -55,6 +55,7 @@ export default {
     };
   },
   methods: {
+   
     //tabel 选项卡
     ds() {
       console.log(2)

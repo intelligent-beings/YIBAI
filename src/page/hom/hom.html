@@ -12,10 +12,16 @@
         <van-area :area-list="areaList" :columns-num="3" :visible-item-count="3" @confirm="confirm" @cancel="cancel">
         </van-area>
       </van-popup>
-      <div class="inp">
-        <input type="text" />
-        <span class="iconfont icon-search"></span>
-      </div>
+      <form action="/hom" method="POST">
+        <div class="inp">
+          <input type="search"  @keyup.enter="search()"  />
+          
+          <span class="iconfont icon-search" 
+            v-on:click= 'onSearch'
+           
+          ></span>
+        </div>
+      </form>
       <div class="linsheng">
         <span class="iconfont icon-ling"></span>
       </div>
@@ -42,7 +48,7 @@
         </li>
         <li class="three">
           <ul>
-            <router-link to="/#" tag='li' v-for="item in three" :key="item.index">
+            <router-link to="/car" tag='li' v-for="item in three" :key="item.index">
               <img :src="item.img" />
               <div>{{item.text}}</div>
             </router-link>
@@ -54,16 +60,16 @@
         <div class="tujian_a">
           <div class="youche">优车推荐</div>
           <div class="tujian_img">
-            <!-- <img src="../../common/img/车友圈视频1.png" />
-            <img src="../../common/img/车友圈视频2.png" /> -->
-            <video controls="controls" autoplay = 'autoplay'>
-              <source src="./vidoe/速10.mp4" />
-            </video>
-            <video   controls="controls">
-              <source src="./vidoe/car.mp4"/>
-            </video>
-            
-            
+            <div class="vid_div1">
+              <video class="vid_11" src="./vidoe/速10.mp4" controls='controls'  />
+
+            </div>
+            <div class="vid_div2">
+              <video class="vid_22" src="./vidoe/car.mp4" controls='controls' />
+
+            </div>
+
+
           </div>
           <div class="tujian_but">
             <button class="iconfont icon-car">

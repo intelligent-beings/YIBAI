@@ -1,5 +1,5 @@
 <div id="car">
-    <He></He>
+   <He></He>
     <!-- tabel选项卡 -->
     <div class="lists">
       <van-dropdown-menu>
@@ -22,7 +22,7 @@
     <!-- 车列表 -->
     <div class="car_list">
       <ul class="car_listUL">
-        <li>
+        <router-link to='/carMessage' tag ='li'>
           <img src="../../common/img/car (3).png" alt>
           <span class="text">
             <span>
@@ -43,8 +43,12 @@
               </span>
             </span>
           </span>
-        </li>
-        <li v-for="item in 10" :key="item.index">
+        </router-link>
+        <router-link to='/carMessage' 
+        tag = 'li' 
+        v-for="item in 10" :key="item.index"
+        
+        >
           <img src="../../common/img/car (5).png" alt>
           <span class="text">
             <span>
@@ -65,7 +69,8 @@
               </span>
             </span>
           </span>
-        </li>
+        </router-link>
+        
       </ul>
     </div>
   </div>  

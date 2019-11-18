@@ -1,79 +1,8 @@
-<template>
-  <div id="tou">
-    <header>
-      <div class="title">
-        <img src="../../common/img/门店/icon_left.png"/> 
-        <span>选择门店</span>
-      </div>
-      <div class="site">
-        <span class>所在城市</span>
-        <select class="didian">
-          <option value="深圳">深圳</option>
-          <option value="深圳">上海
-          </option>
-        </select>
-      </div>
-    </header>
-    <div class="content">
-      <ul>
-        <li>
-          <div class="xx">
-            <img src="../../common/img/门店/5.png" alt>
-            <div class="text">
-              <div>广东车亿佰新车大喹哪里都一样在</div>
-              <div>龙华大浪新区鹊山新村12号</div>
-              <div>
-                <p>距离31km</p>
-              </div>
-            </div>
-          </div>
-          <div class="oriented">
-              <span class="none">
-                <img src='../../common/img/门店/shangjiaxiaoxi.png' alt>
-                <span>进店</span>
-              </span>
-              <span class="tow">
-                <img src='../../common/img/门店/dingwei.png' alt>
-                <span>地图导向</span>
-              </span>
-              <span class="sree">
-                <img src='../../common/img/门店/dianhua.png' alt>
-                <span>预约咨询</span>
-              </span>
-          </div>
-        </li>
-        <li>
-          <div class="xx">
-            <img src="../../common/img/门店/5.png" alt>
-            <div class="text">
-              <div>广东车亿佰新车大喹哪里都一样在</div>
-              <div>龙华大浪新区鹊山新村12号</div>
-              <div>
-                <p>距离31km</p>
-              </div>
-            </div>
-          </div>
-          <div class="oriented">
-              <span class="none">
-                <img src='../../common/img/门店/shangjiaxiaoxi.png' alt>
-                <span>进店</span>
-              </span>
-              <span class="tow">
-                <img src='../../common/img/门店/dingwei.png' alt>
-                <span>地图导向</span>
-              </span>
-              <span class="sree">
-                <img src='../../common/img/门店/dianhua.png' alt>
-                <span>预约咨询</span>
-              </span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+<template src = './mendian.html'>
+   
 </template>
-<script>
-export default {};
+<script src= './mendian.js'>
+ 
 </script>
 <style lang="less" scoped>
 @import url("./less/mendian.less");

@@ -3,6 +3,7 @@
 export default {
   data() {
     return {
+       
       show: false, //头部地址栏控件
       daikon: [
         { text: "贷款购车", src: require("./../../common/img/8 (1).png") },
@@ -48,6 +49,23 @@ export default {
     this.requestAddss(); //初始化城市地址数据
   },
   methods: {
+    
+    //获得焦点时
+    focus(){
+      console.log("onFocus");
+      
+    },
+    // 搜索
+    onSearch(){
+        alert("search")
+    },
+    search(e){
+      if(clickValidate("form")){
+        return true;
+      };
+      e.preventDefault();
+      
+    },
     fast_Rquest() {
       //  var url ='https://www.easy-mock.com/mock/5cb55b5a343b9d4c705ac229/caryibai/homimg';
       var url = "127.0.0.1:9900"
