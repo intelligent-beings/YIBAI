@@ -35,7 +35,7 @@
                         <img src='../../common/img/门店/dingwei.png' alt>
                         <span>地图导向</span>
                     </span>
-                    
+
                     <span class="sree">
                         <img src='../../common/img/门店/dianhua.png' alt>
                         <span>预约咨询</span>
@@ -62,19 +62,26 @@
                         <img src='../../common/img/门店/dingwei.png' alt>
                         <span>地图导向</span>
                     </span>
-                    
-                    <van-cell   
-                    @click="showPopup" 
-                    
-                    
-                    >
+                    <van-cell @click="showPopup">
                         <img src='../../common/img/门店/dianhua.png' alt>
                         <span>预约咨询</span>
-                    </van-cell>
-                    <van-popup v-model="show">
-                        <van-button type="primary" size="large">大号按钮</van-button>
-                        asdffasas
 
+                    </van-cell>
+                    <van-popup 
+                    v-model="show" 
+                    position='bottom' 
+                    :style="{height:'50%'}"
+                    @click = 'off'
+                   
+                    >   
+                        <div>
+                            <input type="text" value=" 1325674" readonly/>
+                        </div>
+                        <van-button 
+                        type="primary" 
+                        size="large" 
+                        text='呼叫号码' 
+                        @click='callOut'></van-button>
                     </van-popup>
                 </div>
             </li>
