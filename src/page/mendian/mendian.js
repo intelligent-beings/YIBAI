@@ -17,6 +17,7 @@ export default {
             console.log("callOut",Event);
             
         },
+        //遮罩层触发事件可以清除罩层换页面
         off(){
             console.log('off');
 
