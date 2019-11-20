@@ -71,17 +71,21 @@
                     v-model="show" 
                     position='bottom' 
                     :style="{height:'50%'}"
-                    @click = 'off'
-                   
+                     
                     >   
                         <div>
-                            <input type="text" value=" 1325674" readonly/>
+                            <input type="text"   readonly v-model='message'/>
                         </div>
-                        <van-button 
+                        <a href="tel:v-bind:{message}" >
+                            <van-button 
                         type="primary" 
                         size="large" 
-                        text='呼叫号码' 
-                        @click='callOut'></van-button>
+                         text='呼叫号码'
+                        @click='callOut'>
+                        
+                        </van-button>
+                        </a>
+                        
                     </van-popup>
                 </div>
             </li>
