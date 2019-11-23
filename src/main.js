@@ -39,3 +39,6 @@ new Vue({
     router: rout,
     store: store
 })
+
+
+
