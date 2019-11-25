@@ -1,4 +1,3 @@
-// import { 3.png} from './../../common/img'
 
 export default {
   data() {
