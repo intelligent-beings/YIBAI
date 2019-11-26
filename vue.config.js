@@ -7,6 +7,7 @@ module.exports = {
 
   assetsDir: 'static',  //放置打包生成的静态资源文件
   filenameHashing: false,   //生成文件中是否带有叫哈稀值  
+  
   lintOnSave: false,     //eslint 每次保存后是否检查
   productionSourceMap: false,
   configureWebpack: {
