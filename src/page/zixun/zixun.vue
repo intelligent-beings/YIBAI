@@ -6,11 +6,11 @@
       <img src="../../common/img/咨询/ling.png">
     </header>
     <div class="cont">
-      {{}}
+      {{message}}
     </div>
     <div class="dialogude">
       <div>
-        <input placeholder="请输入要咨询的信息" >
+        <input placeholder="请输入要咨询的信息" autofocus='autofocus' @input="search($event)">
         <img src="../../common/img/咨询/biaoqing.png">
       </div>
       <div class="fa">发送</div>
@@ -18,9 +18,19 @@
   </div>
 </template>
 <script>
+import { log } from 'util'
 export default {
   data(){
     return{
+      message:'',
+      mes:''
+    }
+  },
+  methods:{
+    search:function(event){
+      console.log(event.currentTarget.value);
+        
+
     }
   }
 };
