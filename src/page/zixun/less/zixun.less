@@ -1,76 +1,54 @@
-#zixun{
-    width:100%;
+.zixun{
+    width: 100%;
     height:100%;
-    // position: relative;
-    
-   .tou{
-       background: #fff;
-       z-index: 1;
-       width:100%;
-       height:3rem;
-       display: flex;
-       justify-content: space-between;
-       align-items:center;
-       position:fixed;
-       left:0;
-       top:0;
-        
-        img:nth-child(1){
-            height: 1.5rem;
-        }
-        span{
-            font-size: 1.2rem;
-            color:#909090;
-        }
-        img:nth-child(3){
-            height: 2rem;
-        }
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+
+
+
+
+    header{
+        width: 100%;
+        height: 3rem;
+        border: 0 0 1rem 0;
+        background:#000000a3;
+        position: fixed;
+        top: 0;
+        left:0;
     }
     .cont{
-        background: #EEEEEE;
-        width:100%;
-        height:(100%-10rem);
-        padding-top: 3rem;
-    }
-    .dialogude{
-        width:100%;
-        height:2.5rem;
-        position:fixed;
-        left:0;
-        bottom:4.5rem;
-        display:flex;
-        align-items:baseline;
-        padding-left:0.3rem;
+        widows: 100%;
+        margin: 3rem 0 0 0;
+        height: max-content;
+        background: yellow;
+
         
-        div:nth-child(1){
-            width:80%;
-            height:100%;
-            display: inline-flex;
-            position: relative;
-            input{
-                width:100%;
-                height: 100%;
-                padding-left: 0.5rem;
-            }
-            img{
-                position: absolute;
-                right: 0;
-                bottom:0;
-                width:2rem;
-                height: 100%;
-            }
-        }
-        .fa{
-            background:#EFB81B;
-            width:(15%);
-            height: 2rem;
-            line-height: 2rem;
-            text-align: center;
-            margin: auto 0;
-            border-radius: 0.5rem;
-            color: #fff;
 
+
+    }
+    .from{
+        width: 100%;
+        display: flex;
+        position: fixed;
+        left:0rem;
+        bottom: 2rem;
+        background: pink;
+        div>img{
+            width: 2rem;
+        }
+        textarea{
+            flex-grow: 1;
+            padding: 0.5rem  0.3rem 0 0.3rem;
+            background:#edefef;
+
+        }
+        .but{
+            color: rgb(255, 255, 255);
+            width: 5rem;
+            // height: 100%;
+            background: sandybrown;
         }
 
     }
+
 }
