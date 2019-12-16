@@ -57,8 +57,8 @@ body {
 }
 #app {
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  height:100%;
+  overflow: hidden;
 }
 h1,
 h2,

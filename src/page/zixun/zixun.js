@@ -1,39 +1,28 @@
-import { log } from "util";
+// import { log } from "util";
+import Axios from "axios";
 export default {
   data() {
     return {
-      message: {},
+      // message: {},
       mes:[],
-      
+      xx:null,
+      d:"</br>"
     };
   },
   created: function() {
-    var lett = this;
-    //初始化实例的时候给DOM绑定键盘事件
-    document.onkeydown = function(event) {
-      if (event.keyCode == 13 && event.ctrlKey) {
-        lett.send(event);
-      }
-    };
-  },
-  methods: {
-    //监听input事件
-    search: function(event) {
-      this.message = event.target.value
-      console.log(this.message)
-      
-    },
     
-    send: function(e) {
-      
-      if (this.message == "") {
-        alert("请输入内容");
-      } else {
-        
-        this.mes.push(this.message)
-        e.target.value=''
-        
-      }
+  
+  },
+  
+  methods: {
+   
+    dk(){
+      const br = '<br></br>'
+      // this.mes += this.xx
+      this.mes += this.$refs.message.value 
+      //ref属性不用在data中初始化
+      this.$refs.message.value=''
+     
     }
   }
-};
+}

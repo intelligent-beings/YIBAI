@@ -1,4 +1,4 @@
-
+``
 const path = require('path')
 const webpack = require('webpack')
 module.exports = {
@@ -30,7 +30,7 @@ module.exports = {
 
     hot:true,//热加载
     open: true,   //自动打开浏览器
-    host: 'localhost',
+    host: '192.168.43.35',
     port: 8080,
     https:false,
     hotOnly: false,
