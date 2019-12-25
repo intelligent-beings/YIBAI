@@ -1,8 +1,11 @@
 <template>
 <div class="zixun">
   <header></header>
-  <div class="cont"  v-html=''>
-    {{mes}}
+  <div class="cont">
+    <div>
+      <p>{{mesList}}</p>
+
+    </div>
   </div>
     <form action="" class="from"  @submit.prevent>
       <textarea  autofocus='off'
@@ -15,7 +18,7 @@
         <img src="../../common/img/咨询/biaoqing.png" alt="">
       </div>
       <input type="submit" class="but" value="发送"
-      @click="dk" 
+      @click="send()" 
       />
     </form>
 </div>

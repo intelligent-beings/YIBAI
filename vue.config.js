@@ -27,14 +27,22 @@ module.exports = {
   },
   //设置代理
   devServer: {
-
     hot:true,//热加载
     open: true,   //自动打开浏览器
-    host: '192.168.43.35',
-    port: 8080,
-    https:false,
+   
     hotOnly: false,
-    proxy: null,
+    proxy: {
+      "/api": {
+          target: "http://openapi.tuling123.com", // 需要跨域的目标url，我这里用到的是豆瓣API
+          changeOrigin: true, // 将基于名称的虚拟托管网站的选项，如果不配置，请求会报404
+          ws: true,
+          pathRewrite: {
+            "^/api": ''
+          }
+        }
+       
+  },
+    host: 'localhost',//本机Ip或localhost,
     before: app => {},
     
   },
