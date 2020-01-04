@@ -31,6 +31,7 @@ module.exports = {
     open: true,   //自动打开浏览器
    
     hotOnly: false,
+    //代理
     proxy: {
       "/api": {
           target: "http://openapi.tuling123.com", // 需要跨域的目标url，我这里用到的是豆瓣API
