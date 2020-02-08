@@ -15,7 +15,7 @@ export default {
 
   methods: {
     send() {
-      this.message = { inputValue: this.$refs.message.value };
+      this.message =  this.$refs.message.value ;
       this.mesList.push(this.message);
       //ref属性不用在data中初始化
       this.$refs.message.value = "";
@@ -53,9 +53,13 @@ export default {
         },
         
       })
-      .then(function(res) {
+      .then((res)=> {
         
-           console.log( res.data.results)
+             res.data.results.forEach(element => {
+             console.log();
+              this.mesList.push(element.values.text)
+             
+           })
 
           
       })

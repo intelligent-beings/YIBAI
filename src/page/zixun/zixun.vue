@@ -3,7 +3,8 @@
   <header></header>
   <div class="cont">
     <div>
-      <p>{{mesList}}</p>
+      <p v-for="items in mesList">{{items}}</p>
+      <!-- <p>{{items.inputValue}}</p> -->
 
     </div>
   </div>
