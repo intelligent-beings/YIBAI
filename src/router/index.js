@@ -6,9 +6,9 @@ import mendian from '../page/mendian/mendian.vue'
 import wode from '../page/wode/wode.vue'
 import zixun from '../page/zixun/zixun.vue'
 import login from '../page/login/login.vue'
-import register from '../page/register/register.vue'
+import phoneOn from '../page/phoneOn/phoneOn.vue'
 import retrievePassword from '../page/login/retrievePassword/retrievePassword.vue'
-import Map from '../common/map/map.vue'
+import map from '../common/map/map.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -18,18 +18,15 @@ export default new VueRouter({
         {path:'/hom',component:hom},
         {path:'/zixun',component:zixun},
         {path:'/mendian',component:mendian},
-        {path:'/map',component:Map},
+        {path:'/map',component:map},
         {path:'/car',component:car},
         {path:'/wode',component:wode},
-        {path:'/register',component:register},
+        {path:'/phoneOn',component:phoneOn},
        
-        {
-            path:'/login',
-            component:login,
-            name:'login',
-            children:[
-                {path:'retrievePassword',component: retrievePassword}
-            ]
-        },
+        {path:'/login',component:login,children:[
+            
+        ]},
+        {path:'/retrievePassword',component:retrievePassword},
+    
     ]
 }) 

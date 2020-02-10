@@ -1,7 +1,7 @@
 <template>
-    <div class="retrieve">
+    <div class="retrievePassword">
 
-        找回密码
+       <p> 找回密码</p>
     </div>
 </template>
 <script>
