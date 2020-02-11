@@ -8,7 +8,9 @@ import zixun from '../page/zixun/zixun.vue'
 import login from '../page/login/login.vue'
 import phoneOn from '../page/phoneOn/phoneOn.vue'
 import retrievePassword from '../page/login/retrievePassword/retrievePassword.vue'
-import map from '../common/map/map.vue'
+import map from '../common/map/map.vue';
+import registered from '../page/registered/registered.vue'
+
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -26,6 +28,7 @@ export default new VueRouter({
         {path:'/login',component:login,children:[
             
         ]},
+        {path:'/registered',component:registered},
         {path:'/retrievePassword',component:retrievePassword},
     
     ]
