@@ -1,53 +1,18 @@
-``
-const path = require('path')
-const webpack = require('webpack')
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/production-sub-path/' : '/', 
-  outputDir: 'dist',  //打包输出目录名  
-
-  assetsDir: 'static',  //放置打包生成的静态资源文件
-  filenameHashing: false,   //生成文件中是否带有叫哈稀值  
-  
-  lintOnSave: false,     //eslint 每次保存后是否检查
-  productionSourceMap: false,
-  configureWebpack: {
-    plugins: []
-  },
-  chainWebpack: config => {
-  },
-  css: {
-    loaderOptions: {
-      css: {
- 
-      },
-      postcss: {
- 
-      }
-    }
-  },
-  //设置代理
-  devServer: {
-    hot:true,//热加载
-    open: true,   //自动打开浏览器
-   
-    hotOnly: false,
-    //代理
-    proxy: {
-      "/api": {
-          target: "http://openapi.tuling123.com", // 需要跨域的目标url，我这里用到的是豆瓣API
-          changeOrigin: true, // 将基于名称的虚拟托管网站的选项，如果不配置，请求会报404
-          ws: true,
-          pathRewrite: {
-            "^/api": ''
-          }
-        }
-       
-  },
-    host: 'localhost',//本机Ip或localhost,
-    before: app => {},
-    
-  },
- 
-  
-
+    publicPath: './',//publicPath取代了baseUrl
+    // assetsPublicPath: "./",
+    outputDir: 'dist',
+    lintOnSave: true,
+    runtimeCompiler: true, //关键点在这  原来的 Compiler 换成了 runtimeCompiler
+    // 调整内部的 webpack 配置。
+    chainWebpack: () => {},
+    configureWebpack: () => {},
+    // 配置 webpack-dev-server 行为。
+    devServer: {
+      open: process.platform === 'darwin',
+      host: '0.0.0.0',
+      port: 8080,
+      proxy: null, // string | Object
+      before: app => {}
+    },
 }

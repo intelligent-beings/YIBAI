@@ -7,7 +7,7 @@
       />
     </div>
     <!-- 表单提交 -->
-    <form class="text" method="post" action="login/mei">
+    <form class="text" action="">
       <div class="shouji">
         <input type="text" placeholder="请输用户名/入手机号" />
       </div>
@@ -24,7 +24,7 @@
         </router-link>
       </div>
       <div class="but">
-        <button class="but_login">登陆</button>
+        <button class="but_login" type="button" @click="Sign_up_button()">登陆</button>
         <div class="zhuce">
           <router-link to='/registered'>注册</router-link>
           <router-link to="/retrievePassword">忘记密码</router-link>

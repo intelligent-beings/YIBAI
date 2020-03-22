@@ -4,8 +4,6 @@
   <div class="cont">
     <div>
       <p v-for="items in mesList">{{items}}</p>
-      <!-- <p>{{items.inputValue}}</p> -->
-
     </div>
   </div>
     <form action="" class="from"  @submit.prevent>
@@ -24,7 +22,7 @@
     </form>
 </div>
 
-</form>
+<!-- </form> -->
 </template>
 <script src="./zixun.js"></script>
 <style lang="less" scoped>

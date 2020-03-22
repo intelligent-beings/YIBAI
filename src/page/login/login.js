@@ -10,19 +10,19 @@ export default {
     },
     methods: {
         Sign_up_button() {
-        event.preventDefault();
+        // event.preventDefault();
         console.log(22);
         
-         this.$http.get('127.0.0.1:9900',
+         this.$http.get('127.0.0.1:9900/login',
          {
             name:"",
             pasw:"",
         
-        }).then(function (response) {
-            console.log(response);
+        }).then(function (res) {
+            console.log(res );
           })
           .catch(function (error) {
-            console.log(error,"注册error");
+            console.log(error,"登陆error");
           });
         this.show = false
   

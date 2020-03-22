@@ -26,7 +26,7 @@ export default new VueRouter({
         {path:'/phoneOn',component:phoneOn},
        
         {path:'/login',component:login,children:[
-            
+            // {path:'/mei',component:mei}
         ]},
         {path:'/registered',component:registered},
         {path:'/retrievePassword',component:retrievePassword},
