@@ -1,0 +1,81 @@
+{
+
+  "daikuan": [{
+      "src":  require("./../../common/img/8 (1).png")
+      "text": "贷款购车"
+    },
+    {
+      "src": require("./../../common/img/8 (3).png"),
+      "text": "线下门店"
+    },
+    {
+      "src": require("./../../common/img/8 (2).png"),
+      "text": "优质车源"
+    },
+    {
+      "src": require("./../../common/img/8 (3).png")',
+      "text": "积分商城"
+    }
+  ],
+  "to": [{
+      "jia": "10万以下",
+      "fangshi": "0元首付"
+    },
+    {
+      "jia": "10-15万",
+      "fangshi": "月供2千"
+    },
+    {
+      "jia": "15-20万",
+      "fangshi": "15-20万"
+    },
+    {
+      "jia": "20万以上",
+      "fangshi": "三厢轿车"
+    }
+  ],
+  "three": [{
+      "img": 'require("../../common/img/car_login (9).png")',
+      "text": "长城"
+    },
+    {
+      "img": "require('../../common/img/car_login (9).png')",
+      "text": "长城"
+    },
+    {
+      "img": 'require ("../../common/img/car_login (3).png")',
+      "text": "基尼"
+    },
+    {
+      "img": 'require ("../../common/img/car_login (5).png")',
+      "text": "辉腾"
+    },
+    {
+      "img": 'require ("../../common/img/car_login (7).png")',
+      "text": "qq"
+    },
+    {
+      "img": 'require ("../../common/img/car_login (9).png")',
+      "text": "捷豹"
+    },
+    {
+      "img": 'require ("../../common/img/car_login (11).png")',
+      "text": "本田"
+    },
+    {
+      "img": 'require ("../../common/img/car_login (13).png")',
+      "text": "丰田"
+    },
+    {
+      "img": 'require ("../../common/img/car_login (15).png")',
+      "text": "大众"
+    },
+    {
+      "img": 'require ("../../common/img/car_login (17).png")',
+      "text": "奔奔"
+    }
+  ],
+
+
+
+}
