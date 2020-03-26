@@ -7,16 +7,16 @@
       />
     </div>
     <!-- 表单提交 -->
-    <form class="text" action="">
+    <form class="text" action="" method="get">
       <div class="shouji">
-        <input type="text" placeholder="请输用户名/入手机号" />
+        <input type="text" name="name"  placeholder="请输用户名/入手机号" />
       </div>
       <div class="mima">
-        <input type="password" placeholder="请输入密码" />
+        <input type="password" name ='pws'  placeholder="请输入密码" />
       </div>
       <div class="wodepassword">
         <div>
-          <input id="ps" type="checkbox" />
+          <input id="ps" type="checkbox" name="checkbox" />
           <label for="ps">记住密码</label>
         </div>
         <router-link to="/phoneOn">
@@ -24,7 +24,8 @@
         </router-link>
       </div>
       <div class="but">
-        <button class="but_login" type="button" @click="Sign_up_button()">登陆</button>
+        <input class="but_login" type="submit" value='登陆' 
+          @click="Sign_up_button" >
         <div class="zhuce">
           <router-link to='/registered'>注册</router-link>
           <router-link to="/retrievePassword">忘记密码</router-link>
