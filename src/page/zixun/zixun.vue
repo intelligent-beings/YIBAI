@@ -3,7 +3,7 @@
   <header></header>
   <div class="cont">
     <div>
-      <p v-for="items in mesList">{{items}}</p>
+      <p v-for="items in mesList" :key="items.index">{{items}}</p>
     </div>
   </div>
     <form action="" class="from"  @submit.prevent>
