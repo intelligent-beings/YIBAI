@@ -4,7 +4,7 @@
       <img src="../../common/img/车亿百AAP注册页/车亿百AAP注册页/注册页LOGO@.png">
     </div>
     <!-- 输入注册信息 -->
-    <form autocomplete="Cellular" class="inp">
+    <form autocomplete="Cellular" class="inp"  >
       <div class='xx'>
         <div class="shoujihao">
           <span class="iconfont icon-shouji"></span>
@@ -29,16 +29,7 @@
     <thirdLogin></thirdLogin>
   </div>
 </template>
-<script>
-import thirdLogin from "../../common/thirdLogin/thirdLogin.vue";
-export default {
-  data() {
-    return {};
-  },
-  components: {
-    thirdLogin
-  }
-};
+<script src = './phoneOn.js'>
 </script>
 <style lang="less" scope>
 @import url("./phoneOn.less");

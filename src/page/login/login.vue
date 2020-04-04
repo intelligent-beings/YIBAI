@@ -9,10 +9,10 @@
     <!-- 表单提交 -->
     <form class="text" action="" method="get">
       <div class="shouji">
-        <input type="text" name="name"  placeholder="请输用户名/入手机号" />
+        <input type="text" ref="name" value="xx"  placeholder="请输用户名/入手机号" />
       </div>
       <div class="mima">
-        <input type="password" name ='pws'  placeholder="请输入密码" />
+        <input type="password" v-model="pasw"   placeholder="请输入密码" />
       </div>
       <div class="wodepassword">
         <div>

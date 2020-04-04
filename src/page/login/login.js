@@ -6,8 +6,8 @@ export default {
     return {
       show: false,
       url:'http://127.0.0.1:9000/login',
-      username:"1ds",
-      pasw:"2sad"
+      username:'',
+      pasw:""
     };
 
   },
@@ -17,11 +17,12 @@ export default {
 
     },
     Sign_up_button() {
-      let url_get = this.url
       event.preventDefault();
-      this.$http.get(url_get,{params:{name:this.username,pas:this.pasw}})
+      this.username=this.$refs.name.value
+      let url_get = this.url
+      this.$http.get(url_get,{params:{username:this.username,pasw:this.pasw}})
       .then(function (res) {
-        console.log(res.data,1);
+        console.log(res.data);
       })
         .catch(function (error) {
           console.log(error, "登陆error");
