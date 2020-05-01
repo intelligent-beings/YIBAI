@@ -5,7 +5,7 @@ export default {
   data() {
     return {
       show: false,
-      url:'http://127.0.0.1:9000/login',
+      url:'http://127.0.0.1:3000/login',
       username:'',
       pasw:""
     };
@@ -20,9 +20,9 @@ export default {
       event.preventDefault();
       this.username=this.$refs.name.value
       let url_get = this.url
-      this.$http.get(url_get,{params:{username:this.username,pasw:this.pasw}})
+      this.$http.post(url_get,{params:{username:this.username,pasw:this.pasw}})
       .then(function (res) {
-        console.log(res.data);
+        console.log(res.data,'前台');
       })
         .catch(function (error) {
           console.log(error, "登陆error");

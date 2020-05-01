@@ -15,14 +15,15 @@ import {
     Search,
     Button,
     Overlay,
-    Field
+    Field,
+    Form,
 } from 'vant';
 import 'vant/lib/index.css';
 Vue.use(DropdownMenu).use(DropdownItem)
     .use(Checkbox).use(CheckboxGroup)
     .use(IndexBar).use(IndexAnchor).use(Cell)
     .use(CellGroup).use( Popup).use(Area).use(Search)
-    .use(Button).use(Overlay).use(Field)
+    .use(Button).use(Overlay).use(Field).use(Form)
 
 Vue.prototype.$http = axios;            //axios挂在vue原型上
 

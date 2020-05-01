@@ -1,39 +1,39 @@
 export default {
     data() {
         return {
-            url: 'http://127.0.0.1:9000/registered',
-            show: false,
-            text: '',   //用户名
-            password: '',   //密码
-            tel: '',        //手机号
-            // digit: '',      //   
-            number: '',
+            // url:'http://127.0.0.1:3000/registered',
+            // show: false,
+            username: '',
+            password: '',
+            phone:'手机号 ',
+            pattern: /\d{6}/       //手机号验证
         }
     },
     methods: {
-        submit(e) {
-            e.preventDefault();
-            this.$http.get(this.url, { params: { username: this.text, password: this.password } })
-                .then((res)=>{      //此处函数里参数只能是一个res没有req否则报错
-                     
-                    console.log(res.data);
-                    
+        //表单提交
+        onSubmit(values) {
+            console.log('submit', values);
+          },
 
-                })
-                .catch((error)=>{
-                    console.log(error,'无注册数据');
-                    
-                })
+          //手机号正则验证
+          validator(val) {
+            return /1\d{10}/.test(val);
+          },
+          onFailed(errorInfo) {
+            console.log('failed', errorInfo);
+          },
 
-        }
 
     }
-    
-
-
-
-
 
 }
+
+
+
+
+
+
+
+
 
 
