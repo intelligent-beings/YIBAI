@@ -1,7 +1,7 @@
 export default {
     data() {
         return {
-            // url:'http://127.0.0.1:3000/registered',
+            url:'http://127.0.0.1:3000/registered',
             // show: false,
             username: '',
             password: '',
@@ -13,6 +13,13 @@ export default {
         //表单提交
         onSubmit(values) {
             console.log('submit', values);
+            this.$http.get(this.url,{params:{values}}).then((req,res)=>{
+              console.log(res);
+              
+            }).catch((err)=>{
+              console.log(err);
+              
+            })
           },
 
           //手机号正则验证
