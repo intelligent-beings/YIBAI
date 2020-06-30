@@ -1,6 +1,6 @@
 <template>
   <div id="registered">
-    <van-form @submit="onSubmit" @failed="onFailed">
+    <van-form @submit="onSubmit" @failed="onFailed" enctype="multipart/form-data">
       <van-field
         v-model="username"
         name="username"
@@ -11,7 +11,7 @@
       <van-field
         v-model="password"
         type="password"
-        name="passsword"
+        name="password"
         label="密码"
         placeholder="密码"
         :rules="[{ required: true, message: '请填写密码' }]"
